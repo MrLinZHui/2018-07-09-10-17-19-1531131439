@@ -7,7 +7,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 import static org.fest.assertions.api.Assertions.assertThat;
-
+//expected time:15min, actual time:20min
 public class Practice09Test {
     private Klass klass;
     private ByteArrayOutputStream outContent = new ByteArrayOutputStream();
