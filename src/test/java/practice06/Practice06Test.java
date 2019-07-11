@@ -3,7 +3,7 @@ package practice06;
 import org.junit.Test;
 
 import static org.fest.assertions.api.Assertions.assertThat;
-//expected time:3min, actual time:2min
+//expected time:4min, actual time:3min
 public class Practice06Test {
     @Test
     public void should_person_have_name_and_age() throws Exception {
