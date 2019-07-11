@@ -6,11 +6,20 @@ public class Klass {
     private int klass;
     private String displayName;
     private Person jerry;
+    private Teacher teacher;
     private ArrayList<Student> arrayList;
     public Klass(int klass) {
         this.klass = klass;
         jerry = new Student();
         arrayList = new ArrayList<>();
+    }
+
+    public Teacher getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
     }
 
     public int getNumber() {
@@ -40,6 +49,7 @@ public class Klass {
 
     public void appendMember(Student jerry1) {
         arrayList.add(jerry1);
-        System.out.println("I am Tom. I know Jerry has joined Class"+ this.getNumber()+".\n");
+        System.out.println(this.teacher.getName());
+        System.out.println("I am "+this.teacher.getName()+". I know "+jerry1.getName()+" has joined Class"+ this.getNumber()+".\n");
     }
 }

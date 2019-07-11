@@ -4,20 +4,21 @@ import java.util.Collection;
 import java.util.LinkedList;
 
 public class Teacher extends Person{
-    private Klass klass;
+   // private Klass klass;
     private LinkedList<Klass> linkedList = new LinkedList<Klass>();
     public Teacher(int id,String name, int age,LinkedList<Klass> linkedList) {
         super(id,name, age);
         this.linkedList = linkedList;
+        linkedList.forEach(flass ->{flass.setTeacher(this);});
     }
-    public Teacher(int id,String name, int age,Klass klass) {
-        super(id,name, age);
-        this.klass = klass;
-    }
+//    public Teacher(int id,String name, int age,Klass klass) {
+//        super(id,name, age);
+//        this.klass = klass;
+//    }
 
     public Teacher(int id, String name, int age) {
         super(id, name, age);
-        this.klass = new Klass(0);
+       // this.klass = new Klass(0)
     }
 
     @Override
@@ -44,13 +45,13 @@ public class Teacher extends Person{
         return "My name is " + this.getName() + ". I am " + this.getAge() + " years old. I am a Teacher. I don't teach " + jerry.getName() + ".";
 
     }
-    public Klass getKlass() {
-        return klass;
-    }
-
-    public void setKlass(Klass klass) {
-        this.klass = klass;
-    }
+//    public Klass getKlass() {
+//        return klass;
+//    }
+//
+//    public void setKlass(Klass klass) {
+//        this.klass = klass;
+//    }
 
 
     public Collection<Klass> getClasses() {
