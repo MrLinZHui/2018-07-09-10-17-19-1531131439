@@ -35,10 +35,10 @@ public class Teacher extends Person{
         return print.substring(0,print.length()-2);
     }
     public String introduceWith(Student jerry) {
-        if(this.klass.getNumber()==0){
+        if(this.linkedList.size()==0){
             return  "My name is "+this.getName() + ". I am " + this.getAge() +" years old. I am a Teacher. I teach No Class.";
         }
-        if(jerry.getKlass().getNumber()==this.klass.getNumber()){
+        if(linkedList.contains(jerry.getKlass())){
             return "My name is "+this.getName() + ". I am " + this.getAge() +" years old. I am a Teacher. I teach " + jerry.getName() +".";
         }
         return "My name is "+this.getName() + ". I am " + this.getAge() +" years old. I am a Teacher. I don't teach " + jerry.getName() +".";
