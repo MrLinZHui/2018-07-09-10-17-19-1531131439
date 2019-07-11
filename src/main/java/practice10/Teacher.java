@@ -41,7 +41,8 @@ public class Teacher extends Person{
         if(linkedList.contains(jerry.getKlass())){
             return "My name is "+this.getName() + ". I am " + this.getAge() +" years old. I am a Teacher. I teach " + jerry.getName() +".";
         }
-        return "My name is "+this.getName() + ". I am " + this.getAge() +" years old. I am a Teacher. I don't teach " + jerry.getName() +".";
+            return "My name is " + this.getName() + ". I am " + this.getAge() + " years old. I am a Teacher. I don't teach " + jerry.getName() + ".";
+
     }
     public Klass getKlass() {
         return klass;
